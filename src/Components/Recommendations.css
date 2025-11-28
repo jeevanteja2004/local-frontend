@@ -1,0 +1,58 @@
+.rec-cross{
+    display: flex;
+    overflow-x: scroll;
+    
+    width: 100%;
+    height: 100%;
+}
+@media (max-width:768px){
+    .rec-cross{
+        overflow-x:scroll;
+        width: 100%;
+        
+
+    }
+}
+.upload-box {
+  margin-bottom: 15px;
+  font-family: Arial, sans-serif;
+}
+
+.upload-label {
+  font-size: 15px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.upload-container {
+  border: 1px solid #888;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  background: #fff;
+}
+
+.upload-container:hover {
+  background: #f2f2f2;
+  border-color: #555;
+}
+
+.upload-icon {
+  font-size: 24px;
+  color: teal;
+}
+
+.upload-text {
+  color: #555;
+  font-size: 14px;
+}
+
+#imageInput {
+  display: none;
+}

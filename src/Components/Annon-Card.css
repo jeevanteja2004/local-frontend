@@ -1,0 +1,53 @@
+.announce-card {
+  width: 350px;
+  background: #61a8bd;
+  border-radius: 12px;
+  padding: 18px;
+  margin: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.announce-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.announce-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile-circle {
+  width: 45px;
+  height: 45px;
+  background: #007bff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.announce-email {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.announce-time {
+  font-size: 14px;
+  color: rgb(44, 30, 30);
+  margin: 4px 0 0 0;
+}
+
+.announce-description {
+  margin-top: 14px;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.4;
+}

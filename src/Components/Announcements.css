@@ -1,0 +1,133 @@
+.annon-heading{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    margin-left: 20px;
+}
+.annon-line{
+    border-bottom: 2px solid gray;
+    margin-bottom: 20px;
+    width: 95%;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.annon-add{
+    margin-right: 20px;
+    padding: 5px 10px;
+    
+    color: rgb(20, 18, 18);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color: teal;
+    color: white;
+    font-weight: bold;
+    gap: 5px;
+
+}
+.annon-add:hover{
+    background-color: #006666;
+}
+.annon-cards{
+    display: flex;
+    flex-wrap: wrap;
+    
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    overflow-y: scroll;
+    
+}
+/*popup*/
+/* Overlay */
+.modal-overlay {
+    background: rgba(0, 0, 0, 0.65);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Modal Box */
+.modal-box {
+    background: white;
+    width: 90%;
+    max-width: 450px;
+    padding: 25px;
+    border-radius: 12px;
+    outline: none;
+    animation: popIn 0.25s ease-out;
+}
+
+@keyframes popIn {
+    0% { transform: scale(0.85); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Blur background */
+.annon-container-with-form {
+    filter: blur(3px);
+    pointer-events: none;
+}
+
+/* Form */
+.modal-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-form input,
+.modal-form textarea {
+    margin-bottom: 12px;
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 6px;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cancel-btn {
+    background: gray;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: none;
+}
+
+.submit-btn {
+    background: teal;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: none;
+}
+
+
+/* Overlay */
+.annon-cards{
+    display: flex;
+    gap: 15px;
+    
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:768px){
+    .annon-cards{
+        overflow-y: scroll;
+        height: 80vh;
+    }
+}

@@ -1,0 +1,199 @@
+/* From Uiverse.io by alexmaracinaru */ 
+.cards {
+  width: 250px;
+  max-height: 300px;
+  background-color: rgb(67, 152, 195);
+  padding: .6em;
+  border-radius: 6px;
+  
+  
+}
+
+.card-image {
+ 
+  width: 100%;
+  height: 150px;
+  border-radius: 6px 6px 0 0;
+}
+@media (max-width:768px){
+    .cards{
+        width: 150px;
+        height: 350px;
+    }
+    
+    .heading{
+        font-family: 400;
+    }
+}
+.card-image:hover {
+  transform: scale(0.98);
+}
+
+
+
+
+.heading {
+  font-weight: 200;
+  color: rgb(88, 87, 87);
+  font-size: 12px;
+  padding: 7px;
+  
+  margin-top: 5px;
+  height: 60px;
+  align-self: start;
+  overflow-y: scroll;
+   width: 100%;
+  height: 60px;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 5px;
+  border: 1px solid #90a4c2;
+  outline: none;
+  resize: none;
+  font-size: 12px;
+  color: #344763;
+  background: #fefefe;
+}
+.heading::-webkit-scrollbar{
+  visibility: hidden;
+}
+.heading:hover {
+  cursor: none;
+}
+
+.author {
+  color: gray;
+  font-weight: 400;
+  font-size: 11px;
+  padding-top: 10px;
+  align-self: flex-start;
+  height: 30px;
+  display: flex;
+}
+
+.name {
+  font-weight: 600;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:rgb(5, 5, 4)
+}
+
+.name:hover {
+  cursor: pointer;
+}
+.lastfound-cards{
+    width: 100%;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+
+}
+.lastfound-cards{
+    display: flex;
+    gap: 15px;
+   
+    height:600px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+
+}
+.notallow{
+  cursor: not-allowed;
+}
+.found{
+  display: flex;
+  background-color: rgb(11, 175, 16);
+  color:white;
+  font-weight: 400;
+  margin-top: auto;
+
+  padding: 5px;
+  height: 100%;
+  width: 40px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.status-delete{
+  
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  
+
+}
+
+
+.card-image{
+  background-size: cover;
+  background-size: cover;       /* fills entire box */
+  background-position: center;  /* centers image */
+  background-repeat: no-repeat;
+}
+.loss{
+
+  display: flex;
+  background-color: rgb(194, 35, 35);
+  color:white;
+  font-weight: bold;
+
+  padding: 5px;
+  height: 100%;
+  margin-top: auto;
+  width: 40px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+ 
+  
+}
+.author{
+  
+  width: 100%;
+  justify-content: space-between;
+  
+}
+@media (max-width:768px){
+    .lastfound-cards{
+        overflow-y: scroll;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+
+    }
+    .cards{
+      width: 65%;
+      
+
+      
+    }
+    
+}
+.lost-found-date-drop{
+  display: flex;
+  
+  justify-content: space-between;
+  
+}
+select{
+  width: 100%;
+    margin-bottom: 12px;
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 6px;
+}
+.bgh{
+  display: flex;
+  flex-direction: column;
+ 
+  width: 50%;
+}
+.bg{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  
+}

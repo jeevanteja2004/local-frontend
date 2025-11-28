@@ -1,0 +1,184 @@
+/* ---------- CARD BASE ---------- */
+.rec-card,
+.rec-card-click {
+  min-width: 300px;
+  width: 300px;
+  background: #73a2c8;
+  border-radius: 16px;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  transition: 0.3s ease;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.12);
+  border: 1px solid #e6e6e6;
+  height: 70%;
+}
+
+/* expanded card */
+.rec-card-click {
+  background: #74a5de;
+  box-shadow: 0px 6px 18px rgba(0, 118, 255, 0.3);
+  transform: scale(1.03);
+}
+
+/* ---------- TITLE ---------- */
+.rec-card h6,
+.rec-card-click h6 {
+  align-self: flex-start;
+  margin-left: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1f3b5c;
+  margin-top: 10px;
+}
+
+/* ---------- IMAGE ---------- */
+.rec-img {
+  height: 180px;
+  width: 90%;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-top: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+/* ---------- DESCRIPTION BOX ---------- */
+.rec-des {
+  background: #b3c4da;
+  width: 90%;
+  border-radius: 10px;
+  padding: 10px;
+  height: 100px;
+  overflow-y: auto;
+  margin-top: 12px;
+  border: 1px solid #d6e4f5;
+}
+
+.rec-para {
+  font-size: 14px;
+  color: #425a72;
+  line-height: 1.4;
+}
+
+/* ---------- RATING + REVIEWS ---------- */
+.rating-row {
+  width: 90%;
+  margin-top: 12px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #e8fbe7;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  color: #2b4d31;
+  cursor: pointer;
+}
+
+.rating-row div:last-child {
+  color: #0074e8;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+/* ---------- REVIEWS BOX ---------- */
+.reviews-box {
+  background: #87a6d2;
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  margin-top: 12px;
+  border: 1px solid #e4e4e4;
+}
+
+/* scroll area */
+.reviews-area {
+  height: 120px;
+  overflow-y: auto;
+  background: #dfe7f3;
+  
+  padding: 5px;
+  
+  border-radius: 10px;
+}
+.x{
+  
+  padding-left: 0%;
+  
+}
+/* review item */
+.review-item {
+  background: #ffffff;
+  
+  
+  border-radius: 8px;
+  margin-bottom: 8px;
+  font-size: 12px;
+  padding: 2px;
+  color: #2f3f51;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+.subreview-btns{
+  display: flex;
+  justify-content: space-between;
+    
+}
+.back-btn{
+  margin-top: 10px;
+  width: 30%;
+  padding: 10px;
+  background: #991c1c;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+/* ---------- INPUT ---------- */
+.review-input {
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #90a4c2;
+  outline: none;
+  resize: none;
+  font-size: 14px;
+  color: #344763;
+  background: #fefefe;
+}
+
+.review-input:focus {
+  border-color: #3a8bfd;
+  box-shadow: 0 0 4px rgba(58, 139, 253, 0.4);
+}
+
+/* ---------- BUTTON ---------- */
+.submit-review-btn {
+  margin-top: 10px;
+  width: 60%;
+  padding: 10px;
+  background: #3a8bfd;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.submit-review-btn:hover {
+  background: #1f6fe8;
+  transform: translateY(-2px);
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 768px) {
+  .rec-card, .rec-card-click {
+    min-width: 260px;
+    width: 260px;
+  }
+}
