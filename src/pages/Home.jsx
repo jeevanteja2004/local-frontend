@@ -7,7 +7,7 @@ import Announcements from "../Components/Announcements";
 import LostFound from "../Components/LostFound";
 import Recommendations from "../Components/Recommendations";
 import Comments from "../Components/Comments";
-import UserReputation from "../Components/userReputation";
+import UserReputation from "../Components/UserReputation";
 const Home = () => {
   const selectedFeature = useSelector((state) => state.feature.selected);
   const renderContent = () => {
