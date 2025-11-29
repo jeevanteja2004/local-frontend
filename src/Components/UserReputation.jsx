@@ -65,6 +65,7 @@ const UserReputation = () => {
       if (!res.data.success) return toast.error(res.data.message);
 
       updateUser(id, res.data.user.score);
+      getUsers();
     } catch (err) {
       toast.error("Upvote failed!");
     }
@@ -88,6 +89,7 @@ const UserReputation = () => {
       if (!res.data.success) return toast.error(res.data.message);
 
       updateUser(id, res.data.user.score);
+      getUsers();
     } catch (err) {
       toast.error("Downvote failed!");
     }
@@ -107,6 +109,7 @@ const UserReputation = () => {
       if (!res.data.success) return toast.error(res.data.message);
 
       updateUser(id, res.data.user.score);
+      getUsers();
     } catch (err) {
       toast.error("Undo failed!");
     }
