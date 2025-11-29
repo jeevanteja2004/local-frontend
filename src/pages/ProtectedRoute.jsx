@@ -1,5 +1,4 @@
-import { Navigate,Route } from "react-router-dom";
-import Home from "./Home";
+import { Navigate } from "react-router-dom";
 
 const ProtectedRoute = ({ children }) => {
   const token = localStorage.getItem("token");
@@ -8,7 +7,7 @@ const ProtectedRoute = ({ children }) => {
     return <Navigate to="/login" />;
   }
 
-  return <Route exact path="/" component={<Home/>}/>
+  return children;
 };
 
 export default ProtectedRoute;

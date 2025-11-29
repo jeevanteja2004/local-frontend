@@ -17,7 +17,14 @@ function App() {
       
       <Route path="/register" element={<Signup/>}></Route>
       <Route path="/login" element={<Login/>}></Route>
-      <ProtectedRoute exact path="/" element={<Home/>}/>
+       <Route
+          path="/"
+          element={
+            <ProtectedRoute>
+              <Home />
+            </ProtectedRoute>
+          }
+        />
     </Routes>
     <ToastContainer/>
     </BrowserRouter>
